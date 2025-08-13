@@ -1,0 +1,178 @@
+.help-block {
+    color: red;
+}
+
+.has-success .help-block {
+    color: green;
+}
+
+.quick-report-widget {
+    float: left;
+    text-align: center;
+    width: 100%
+}
+
+.quick-report-widget>span {
+    /* color: #989898; */
+    float: left;
+    font-size: 13px;
+    margin-top: 20px;
+    width: 100%
+}
+
+.quick-report-widget>h4 {
+    /* color: #404040; */
+    float: left;
+    font-size: 27px;
+    margin: 7px 0 12px;
+    width: 100%
+}
+
+.quick-report-widget>h5 {
+    /* border-top: 1px solid #e7e7e7; */
+    color: #fff;
+    float: left;
+    font-size: 15px;
+    font-weight: 400;
+    margin: -16px 0 0;
+    padding: 18px 0;
+    width: 100%
+}
+
+.quick-report-widget>i {
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    float: none;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px
+}
+
+.break-word {
+    word-break: break-all;
+    white-space: normal;
+}
+
+.tab_header_text {
+    font-size: 12px !important;
+    font-weight: bold !important;
+    ;
+}
+
+.site_header_text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.site_label_text {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.site_input {
+    line-height: 1;
+}
+
+.site_mark_text {
+    font-size: 8px;
+}
+
+/* .display_content {
+    display: inline;
+   
+}
+
+@media (max-width: 768px) {
+    .display_content {
+        display: none;
+    }
+} */
+/* Default: Show both number and full name */
+.display_content {
+    display: inline;
+}
+
+.numbers {
+    padding: 0px 3px 0px 3px;
+}
+
+/* On mobile (max-width: 768px), hide full names for inactive tabs, show number only */
+@media (max-width: 768px) {
+    .nav-item .display_content {
+        display: none;
+    }
+
+    /* Show full name for active tab */
+    .nav-item .active .display_content {
+        display: inline;
+    }
+
+    .nav-item .active .numbers {
+        display: none;
+    }
+}
+
+
+.note-editable ul {
+    list-style: disc !important;
+    list-style-position: inside !important;
+}
+
+.note-editable ol {
+    list-style: decimal !important;
+    list-style-position: inside !important;
+}
+
+.shake {
+    animation: shake 1.0s infinite;
+    transform-origin: center;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
