@@ -354,7 +354,7 @@ At IPlots, we understand that real estate is not just about buying or selling pr
                                         <div class="category-list">
                                             <a href="javascript:void(0)">Web Application</a>
                                         </div>
-                                       
+
                                     </div>
                                     <h4 class="title"><a href="javascript:void(0)">Usite Multi-Site Builder<i
                                                 class="feather-arrow-up-right"></i></a></h4>
@@ -874,52 +874,52 @@ At IPlots, we understand that real estate is not just about buying or selling pr
     <script>
         const skills = [
             // Developer / Programming Languages
-            { category: "Developer Skills", name: "React Native", img: "https://icon.icepanel.io/Technology/svg/React.svg" },
-            { category: "Developer Skills", name: "JavaScript", img: "https://icon.icepanel.io/Technology/svg/JavaScript.svg" },
-            { category: "Developer Skills", name: "PHP", img: "https://icon.icepanel.io/Technology/svg/PHP.svg" },
-            { category: "Developer Skills", name: "Typescript", img: "https://icon.icepanel.io/Technology/svg/TypeScript.svg" },
-            { category: "Developer Skills", name: "Codeigniter", img: "https://icon.icepanel.io/Technology/svg/CodeIgniter.svg" },
-            { category: "Developer Skills", name: "Realm", img: "https://icon.icepanel.io/Technology/svg/Realm.svg" },
-            { category: "Developer Skills", name: "Redux", img: "https://icon.icepanel.io/Technology/svg/Redux.svg" },
+            { category: "Core Tech Stack", name: "React Native", img: "https://icon.icepanel.io/Technology/svg/React.svg" },
+            { category: "Core Tech Stack", name: "JavaScript", img: "https://icon.icepanel.io/Technology/svg/JavaScript.svg" },
+            { category: "Core Tech Stack", name: "PHP", img: "https://icon.icepanel.io/Technology/svg/PHP.svg" },
+            { category: "Core Tech Stack", name: "Typescript", img: "https://icon.icepanel.io/Technology/svg/TypeScript.svg" },
+            { category: "Core Tech Stack", name: "Codeigniter", img: "https://icon.icepanel.io/Technology/svg/CodeIgniter.svg" },
+            { category: "Core Tech Stack", name: "Realm", img: "https://icon.icepanel.io/Technology/svg/Realm.svg" },
+            { category: "Core Tech Stack", name: "Redux", img: "https://icon.icepanel.io/Technology/svg/Redux.svg" },
             // Tools
-             { category: "Tools", name: "Android Studio", img: 'assets/svg/android-studio.svg' },
-              { category: "Tools", name: "Xcode", img: 'assets/svg/Xcode.svg' },
+            { category: "Tools", name: "Android Studio", img: 'assets/svg/android-studio.svg' },
+            { category: "Tools", name: "Xcode", img: 'assets/svg/Xcode.svg' },
             { category: "Tools", name: "GitHub", img: "https://icon.icepanel.io/Technology/png-shadow-512/GitHub.png" },
             { category: "Tools", name: "Visual Studio Code", img: "https://icon.icepanel.io/Technology/svg/Visual-Studio-Code-%28VS-Code%29.svg" }
         ];
 
-       const skillsContainer = document.getElementById("skills");
+        const skillsContainer = document.getElementById("skills");
 
-const grouped = skills.reduce((acc, skill) => {
-    if (!acc[skill.category]) acc[skill.category] = [];
-    acc[skill.category].push(skill);
-    return acc;
-}, {});
+        const grouped = skills.reduce((acc, skill) => {
+            if (!acc[skill.category]) acc[skill.category] = [];
+            acc[skill.category].push(skill);
+            return acc;
+        }, {});
 
-for (const [category, items] of Object.entries(grouped)) {
-    // Add category title
-    const title = document.createElement("h5");
-    title.className = "text-white mt-4 mb-3";
-    title.textContent = category;
-    skillsContainer.appendChild(title);
+        for (const [category, items] of Object.entries(grouped)) {
+            // Add category title
+            const title = document.createElement("h5");
+            title.className = "text-white mt-4 mb-3";
+            title.textContent = category;
+            skillsContainer.appendChild(title);
 
-    // Render skills
-    const row = document.createElement("div");
-    row.className = "d-flex flex-wrap";
+            // Render skills
+            const row = document.createElement("div");
+            row.className = "d-flex flex-wrap";
 
-    items.forEach(skill => {
-        const skillItem = document.createElement("a");
-        skillItem.className = "rn-btn text-center btn-sm mx-2 mb-4";
-        skillItem.innerHTML = `
+            items.forEach(skill => {
+                const skillItem = document.createElement("a");
+                skillItem.className = "rn-btn text-center btn-sm mx-2 mb-4";
+                skillItem.innerHTML = `
             <div class="d-flex flex-column align-items-center">
                 <img src="${skill.img}" alt="${skill.name}" style="height:26px;" />
                 <small class="mt-1 text-white">${skill.name}</small>
             </div>`;
-        row.appendChild(skillItem);
-    });
+                row.appendChild(skillItem);
+            });
 
-    skillsContainer.appendChild(row);
-}
+            skillsContainer.appendChild(row);
+        }
 
     </script>
     <script src="assets/js/modernizer.min.js"></script>
